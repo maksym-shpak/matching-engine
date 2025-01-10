@@ -42,8 +42,6 @@ This project is a **JavaScript experiment** exploring the performance of a simpl
 ├── tests
 │   └── performance-tests.js        # Unit tests for performance and correctness
 ├── package.json             # Node.js configuration file
-├── package-lock.json        # Lockfile for dependencies
-└── node_modules             # Installed dependencies
 ```
 
 ## Setup Instructions
