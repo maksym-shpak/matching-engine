@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matching Engine Playground</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.4.3/decimal.min.js"></script>
+    <script src="./matching-engine.js" defer></script>
+  </head>
+  <body>
+    <h1>Matching Engine Demo</h1>
+    <div id="order-form">
+      <input type="number" id="price" placeholder="Price" required />
+      <input type="number" id="quantity" placeholder="Quantity" required />
+      <select id="type">
+        <option value="buy">Buy</option>
+        <option value="sell">Sell</option>
+      </select>
+      <button onclick="addOrder()">Add Order</button>
+      <button onclick="addRandomOrders(100000)">Add 100k Random Orders</button>
+    </div>
+    <div id="statistics">
+      <h3>Statistics</h3>
+      <p id="matched-percentage">Matched Percentage: 0%</p>
+      <p id="matching-time">Matching Time: 0ms</p>
+    </div>
+    <h2>Pending Order Book</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="order-book"></tbody>
+    </table>
+  </body>
+</html>

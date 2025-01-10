@@ -1,0 +1,17 @@
+{
+  "name": "matching-engine-demo",
+  "version": "1.0.0",
+  "description": "A simple matching engine demo",
+  "main": "src/demo.html",
+  "scripts": {
+    "start": "http-server -o",
+    "test": "node tests/performance-tests.js"
+  },
+  "keywords": [],
+  "author": "Maksym Shpak",
+  "license": "MIT",
+  "dependencies": {
+    "decimal.js": "10.4.3",
+    "http-server": "14.1.1"
+  }
+}
