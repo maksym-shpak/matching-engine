@@ -40,7 +40,7 @@ This project is a **JavaScript experiment** exploring the performance of a simpl
 │   ├── matching-engine.js   # JavaScript logic for the matching engine
 │   └── styles.css           # Styling for the application
 ├── tests
-│   └── performance-tests.js        # Unit tests for performance and correctness
+│   └── performance-tests.js # Unit tests for performance and correctness
 ├── package.json             # Node.js configuration file
 ```
 
@@ -55,7 +55,7 @@ This project is a **JavaScript experiment** exploring the performance of a simpl
 2. **Run the Project**:
 
    ```bash
-   npx http-server ./src -o --cors
+   npm start
    ```
 
    This will launch a local development server and open the application in your default browser.
@@ -63,7 +63,7 @@ This project is a **JavaScript experiment** exploring the performance of a simpl
 3. **Run Unit Tests**:
    Navigate to the `tests` folder and execute:
    ```bash
-   node unit_tests.js
+   npm test
    ```
    This will perform 10 iterations of stress testing with 100,000 random orders in each iteration.
 
